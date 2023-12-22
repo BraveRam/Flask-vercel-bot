@@ -4,7 +4,7 @@ from flask import Flask, request
 TOKEN = '6064058058:AAFaGx_p7vqzEFiuxpdlSKTdEXdLdS9-pw0'  
 bot = telebot.TeleBot(TOKEN)
 
-webhook_url = 'https://your-webhook-url.com/webhook' 
+webhook_url = 'https://flask-vercel-bot.vercel.app/webhook' 
 bot.set_webhook(url=webhook_url)
 
 @bot.message_handler(func=lambda message: True)
